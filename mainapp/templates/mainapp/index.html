@@ -1,16 +1,406 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-{% for i in data %}
-{{ i }}
-{% endfor %}
+{% extends 'mainapp/layout.html' %}
 
-</body>
-</html>
+{% block main %}
+<div id="content" class="page-content site-content single-post" role="main">
+  <!-- Home Page Top Part -->
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12">
+      <div class="home-content">
+
+        <div class="row flex-v-align">
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <div class="home-text hp-left">
+              <div class="owl-carousel text-rotation">
+                <div class="item">
+                  <h4>Frontend-разработчик</h4>
+                </div>
+
+                <div class="item">
+                  <h4>Веб-дизайнер</h4>
+                </div>
+
+                <div class="item">
+                  <h4>Backend-разработчик</h4>
+                </div>
+
+                <div class="item">
+                  <h4>Python-разработчик</h4>
+                </div>
+
+                <div class="item">
+                  <h4>Java-разработчик</h4>
+                </div>
+
+                <div class="item">
+                  <h4>Фиксик</h4>
+                </div>
+              </div>
+
+              <h1>Чолпонбеков Марсель</h1>
+              <p>Приветствую вас в моем портфолио!
+                Меня зовут Чолпонбеков Марсель, и я опытный full-stack разработчик.
+                Я стремлюсь к созданию удобных и современных интерфейсов, которые не только функциональны, но и приятны для пользователя.
+                Прошу вас просмотреть разделы моего портфолио, чтобы увидеть примеры моей работы. Если вы ищете квалифицированного разработчика для вашего проекта, можете связатся сомной на стрнице Контакт. Давайте вместе создадим что-то удивительное!</p>
+              <div class="home-buttons">
+                <a href="contact.html" target="_self" class="btn btn-secondary w-50">Контакт</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class="home-photo">
+              <div class="hp-inner" style="background-image: url(./img/stethem.jpeg);">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Home Page Top Part -->
+
+  <!-- Services -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="p-50"></div>
+
+      <div class="block-title">
+        <h2>Услуги</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-pen"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Копирайтинг</h4>
+            <p>Я предоставляю профессиональные услуги копирайтинга. Создаю увлекательный контент для веб-сайтов, блогов, рекламы и социальных медиа. Гарантирую высокое качество, подчеркиваю уникальность бренда и привлекаю целевую аудиторию. Доверьтесь мне для яркого и эффективного передачи вашего сообщения.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-display"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Веб-дизайн</h4>
+            <p>Яркий и креативный веб-дизайн — это ключ к успешному визуальному восприятию вашего проекта. Моя работа направлена на создание уникальных и функциональных веб-сайтов, которые привлекают внимание и оставляют положительное впечатление. С моим подходом дизайн становится эффективным инструментом для достижения ваших целей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-shop"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Интернет-торговля</h4>
+            <p>В мире интернет-торговли каждый момент важен. Моя задача - создавать привлекательные и эффективные онлайн-площадки, которые помогут вам выделиться среди конкурентов. Сочетая удобство, стиль и современный дизайн, я стремлюсь сделать ваш интернет-магазин максимально привлекательным для потенциальных покупателей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-shop"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Интернет-торговля</h4>
+            <p>В мире интернет-торговли каждый момент важен. Моя задача - создавать привлекательные и эффективные онлайн-площадки, которые помогут вам выделиться среди конкурентов. Сочетая удобство, стиль и современный дизайн, я стремлюсь сделать ваш интернет-магазин максимально привлекательным для потенциальных покупателей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-display"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Веб-дизайн</h4>
+            <p>Яркий и креативный веб-дизайн — это ключ к успешному визуальному восприятию вашего проекта. Моя работа направлена на создание уникальных и функциональных веб-сайтов, которые привлекают внимание и оставляют положительное впечатление. С моим подходом дизайн становится эффективным инструментом для достижения ваших целей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4">
+      <div class="info-list-w-icon">
+        <div class="info-block-w-icon">
+          <div class="ci-icon">
+            <i class="linecons linecons-pen"></i>
+          </div>
+
+          <div class="ci-text">
+            <h4>Копирайтинг</h4>
+            <p>Я предоставляю профессиональные услуги копирайтинга. Создаю увлекательный контент для веб-сайтов, блогов, рекламы и социальных медиа. Гарантирую высокое качество, подчеркиваю уникальность бренда и привлекаю целевую аудиторию. Доверьтесь мне для яркого и эффективного передачи вашего сообщения.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /Services -->
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="p-20"></div>
+
+      <!-- Testimonials -->
+      <div class="block-title">
+        <h2>Отзывы</h2>
+      </div>
+
+      <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="1" data-items="1">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+
+            <div class="testimonial-picture">
+              <img src="./img/testimonials/toni.jpg" alt="Эрмек Исаев"/>
+            </div>
+
+            <div class="testimonial-text">
+              <p>Вау, просто взорвал мой мозг! Работать с этим гением - это как скачать порцию креативного взрыва напрямую в свой мозг. Он не просто профессионал, это человек-оркестр, магия которого превращает проекты в настоящие шедевры. Я просто танцую от счастья, видя, как мои идеи становятся реальностью под его руководством. Это не просто сотрудничество, это веселье на взлетной полосе успеха! Рекомендую с закрытыми глазами – этот космический ковбой знает свое дело!</p>
+            </div>
+
+            <div class="testimonial-author-info">
+              <h5 class="testimonial-author">Эрмек Исаев</h5>
+              <p class="testimonial-firm">Яндекс</p>
+            </div>
+
+            <div class="testimonial-icon">
+              <i class="fa fa-quote-left"></i>
+            </div>
+             <div class="testimonial-icon-big">
+              <i class="fa fa-quote-right"></i>
+            </div>
+
+          </div>
+        </div>
+        <!-- End of Testimonial 1 -->
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+
+            <div class="testimonial-picture">
+              <img src="./img/testimonials/bil.jpg" alt="Билл Гейтс"/>
+            </div>
+
+            <div class="testimonial-text">
+              <p>Профессиональный и талантливый! Работая с этим специалистом, я убедился в его отличных навыках. Он прекрасно справляется с задачами, внимателен к деталям. Сотрудничество с ним - это настоящее удовольствие, и я уверен, что буду обращаться за помощью в будущем!</p>
+            </div>
+
+            <div class="testimonial-author-info">
+              <h5 class="testimonial-author">Билл Гейтс</h5>
+              <p class="testimonial-firm">Microsoft</p>
+            </div>
+
+            <div class="testimonial-icon">
+              <i class="fa fa-quote-left"></i>
+            </div>
+             <div class="testimonial-icon-big">
+              <i class="fa fa-quote-right"></i>
+            </div>
+          </div>
+
+        </div>
+        <!-- End of Testimonial 2 -->
+
+        <!-- End of Testimonial 3 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+
+            <div class="testimonial-picture">
+              <img src="./img/testimonials/jon.jpg" alt="Николь Мартинес"/>
+            </div>
+
+            <div class="testimonial-text">
+              <p>Работая с этим магистром искусства и технологий, я был потрясен не только его мастерством, но и внушительным арсеналом навыков. Он как супергерой, владеющий магией дизайна, программирования и творчества. Если бы супергерои создавали веб-проекты, он был бы их лидером! Поистине эпическое сотрудничество, в котором каждый проект - это отдельная глава в истории креативного подвига. Так держать!</p>
+            </div>
+
+            <div class="testimonial-author-info">
+              <h5 class="testimonial-author">Николь Мартинес</h5>
+              <p class="testimonial-firm">Google</p>
+            </div>
+
+            <div class="testimonial-icon">
+              <i class="fa fa-quote-left"></i>
+            </div>
+            <div class="testimonial-icon-big">
+              <i class="fa fa-quote-right"></i>
+            </div>
+
+          </div>
+        </div>
+        <!-- End of Testimonial 3 -->
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+
+            <div class="testimonial-picture">
+              <img src="./img/testimonials/ilon.png" alt="Илон Маск"/>
+            </div>
+
+            <div class="testimonial-text">
+              <p>Где я учился, он там преподавал.</p>
+            </div>
+
+            <div class="testimonial-author-info">
+              <h5 class="testimonial-author">Илон Маск</h5>
+              <p class="testimonial-firm">Tesla</p>
+            </div>
+
+            <div class="testimonial-icon">
+              <i class="fa fa-quote-left"></i>
+            </div>
+             <div class="testimonial-icon-big">
+              <i class="fa fa-quote-right"></i>
+            </div>
+
+          </div>
+        </div>
+        <!-- End of Testimonial 4 -->
+
+      </div>
+      <!-- /Testimonials -->
+
+      <div class="p-40"></div>
+
+      <!-- Clients Slider -->
+      <div class="block-title">
+        <h2>Клиенты</h2>
+      </div>
+
+      <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
+        <div class="client-block">
+          <a href="#" target="_blank" title="Amazon">
+            <img src="./img/clients/amazon.png" alt="Amazon">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="Lenta">
+            <img src="./img/clients/lenta.png" alt="Lenta">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="Sber">
+            <img src="./img/clients/sber.png" alt="Sber">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="Amogus">
+            <img src="./img/clients/amogus.png" alt="Amogus">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="PayPal">
+            <img src="./img/clients/pypal.png" alt="PayPal">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="Sweety">
+            <img src="./img/clients/logo.png" alt="Sweety">
+          </a>
+        </div>
+
+        <div class="client-block">
+          <a href="#" target="_blank" title="WordPress">
+            <img src="./img/clients/nethunter.png" alt="NetHunter">
+          </a>
+        </div>
+      </div>
+      <!-- /Clients Slider -->
+
+      <div class="p-40"></div>
+
+    </div>
+  </div>
+
+  <!-- Fun Facts -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="block-title">
+        <h2>Интересные факты</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <div class="lm-info-block gray-default">
+        <i class="linecons linecons-heart"></i>
+        <h4>Довольные клиенты</h4>
+        <span class="lm-info-block-value">964</span>
+        <span class="lm-info-block-text"></span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3">
+      <div class="lm-info-block gray-default">
+        <i class="linecons linecons-clock"></i>
+        <h4>Часы работы</h4>
+        <span class="lm-info-block-value">4 ,780</span>
+        <span class="lm-info-block-text"></span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 ">
+      <div class="lm-info-block gray-default">
+        <i class="linecons linecons-star"></i>
+        <h4>Полученные награды</h4>
+        <span class="lm-info-block-value">15</span>
+        <span class="lm-info-block-text"></span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 ">
+      <div class="lm-info-block gray-default">
+        <i class="linecons linecons-cup"></i>
+        <h4>Сделаныйх сайтов</h4>
+        <span class="lm-info-block-value">1,286</span>
+        <span class="lm-info-block-text"></span>
+      </div>
+    </div>
+  </div>
+  <!-- /Fun Facts -->
+
+  <div class="p-40"></div>
+
+  <!-- Pricing -->
+
+  <!-- /Pricing -->
+</div>
+{% endblock %}

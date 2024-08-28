@@ -1,0 +1,234 @@
+.header1 {
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: green;
+  min-height: 200px;
+  margin-bottom: 5px;
+  padding: 5px 50px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.left {
+  width: 20%;
+  border-radius: 5px;
+  float: left;
+  padding: 0px;
+}
+
+.centr {
+  width: 59%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+
+.right {
+  width: 20%;
+  height: 500px;
+  float: left;
+}
+
+.rightTop {
+  height: 49%;
+  background-color:rgba(192, 192, 192);
+  margin-bottom: 2%;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.rightBottom {
+  height: 50%;
+  background-color:rgba(192, 192, 192);
+  border-radius: 5px;
+}
+
+.footer {
+  width: 80%;
+  background-color:rgba(192, 192, 192);
+  border-radius: 5px;
+  margin: auto;
+  height: 90px;
+}
+
+ul{
+  padding: 0 0 10px 0;
+  margin: 0px;
+}
+
+li {
+  color: black;
+  background-color: rgb(204, 204, 204);
+  list-style: none;
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 80%;
+  font-size: 25px;
+  font-family: Calibri;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding-left: 5px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+li:hover {
+  background-color: rgb(66, 151, 231);
+  color: white;
+}
+
+.imgMasterCard{
+  width: 200px;
+  float: left;
+}
+
+.imgCola{
+  width: 92%;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+table{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+   
+}
+
+td{
+  background-color: rgb(205, 228, 255);
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 1px;
+  padding: 10px 20px;
+}
+
+
+td:first-child{
+  color: white;
+  width: 150px;
+  text-align: left;
+  padding-left: 15px;
+  background-color: rgb(154, 183, 207);
+  border-left: none;
+}
+
+th{
+  color: white;
+  width: 90px;
+  background-color: rgb(154, 183, 207);
+  border-left: 1px solid white;
+  padding: 10px 20px;
+}
+
+th:first-child{
+  border-left: none;
+}
+
+form{
+  width: 50%;
+  margin: auto;
+  border: 2px solid gray;
+  padding: 20px;
+  padding-top: 0;
+}
+
+label{
+  display: inline-block;
+  margin-right:20px;
+}
+
+input{
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+textarea{
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.menu{
+  margin: auto;
+  width: 59%;
+  
+}
+
+.menu ul{
+  display: flex;
+  padding: 10px 0;
+}
+
+.menu ul li{
+  margin: 0 5px;
+  padding-right: 5px;
+  border: none;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+@media screen and (max-width: 1035px) {
+  .menu ul li{
+    margin: 0 2px;
+    font-size: 20px;
+    height: max-content;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .menu ul li{
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .left, .right{
+    display: none;
+  }
+
+  .centr{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .menu{
+    width: 100%;
+  }
+
+  .menu ul li{
+    font-size: 20px;
+  }
+}

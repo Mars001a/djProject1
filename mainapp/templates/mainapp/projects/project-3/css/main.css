@@ -1,0 +1,12 @@
+.phone{
+    transition: all 0.5s ease;
+}
+
+.phone:hover{
+    transform: rotate(-10deg);
+}
+
+.plist{
+    margin-right: -8px;
+    margin-left: -5px;
+}

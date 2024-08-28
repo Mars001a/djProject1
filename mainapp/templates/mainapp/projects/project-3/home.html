@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>project-3</title>
+</head>
+
+<body >
+  <header >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">PROJECT-3</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="ms-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold active bg-danger" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="services.html">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="works.html">WORKS</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link fw-semibold" href="#"><i class="bi bi-envelope" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Модальное окно-->
+  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content rounded-0 bg-body-secondary">
+        <div class="modal-header bg-secondary rounded-0 bg-opacity-50">
+          <h1 class="modal-title fw-semibold fs-5" id="staticBackdropLabel">contact us</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body pb-0">
+          <p class="text-center text-secondary pb-3 lh-lg">
+            We are available 24/7, so don't hesitate to contact us.<br><br>
+            Somestreet Ave, 987<br>
+            London, UK.<br>
+            +44 8948-4343<br>
+            contact@example.com
+          </p>
+          <form>
+            <div class="mb-3">
+              <label for="InputName" class="form-label fw-semibold text-secondary fs-5">Your Name</label>
+              <input type="text" class="form-control rounded-0 py-2 fs-6" id="InputName" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label fw-semibold text-secondary fs-5">Your Email</label>
+              <input type="email" class="form-control rounded-0 py-2 fs-6" id="InputEmail" aria-describedby="emailHelp" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="InputSubject" class="form-label fw-semibold text-secondary fs-5">Subject</label>
+              <input type="email" class="form-control rounded-0 py-2 fs-6" id="InputSubject" placeholder="Subject">
+            </div>
+            <div>
+              <label for="Textarea" class="form-label fw-semibold text-secondary fs-5">Your Message</label>
+              <textarea class="form-control rounded-0 py-2 fs-6" id="Textarea" rows="4" placeholder="Your Message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger px-4 mx-auto"><small>Send Message</small></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="d-flex text-center"  style="background: url(img/header-bg.jpg); height: 100vh; background-repeat: no-repeat; background-size:cover;">
+      <div class="row m-auto text-white" data-aos="zoom-in" >
+        <div class="col-md-12">
+          <h1 style="letter-spacing: 3px; font-size: 70px; font-weight: 300;">It Doesn't Take a Rocket <br><span class="fw-semibold">Scientist</span></h1>
+          <h2 class="text-uppercase" style="letter-spacing: 2px; font-size: 40px; font-weight: 400;">It Takes a Designer</h2>
+        </div>
+      </div>
+    </div>
+    <section id="section1" class="container">
+      <div class="row text-center py-5 bg-white">
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="150">
+          <i class="bi bi-heart-fill text-danger fs-2"></i>
+          <h4>DESIGN</h4>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+        </div>
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <i class="bi bi-window-desktop text-danger fs-2"></i>
+            <h4>BOOTSTRAP</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="50">
+            <i class="bi bi-trophy-fill text-danger fs-2"></i>
+            <h4>SUPPORT</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="bg-dark-subtle">
+      <div class="container py-5">
+        <div class="row text-center">
+          <span class="text-center text-uppercase fw-semibold fs-5 pb-3">latest works</span>
+          <div class="col-md-4">
+            <img src="img/p01.png" class="phone" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="img/p02.png" class="phone" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="img/p03.png" class="phone" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section3" class="container p-5 text-center">
+      <h3 class="text-uppercase ">we crate frist class design</h3>
+      <p class="text-body-secondary">By being true to the brand we repercent, we elevate the audiences' relationship to it. Like becomes a passion. Passion becomes advacace. And we see the brand blossom from within, creating a whole story the audienceembraces. That's when the brand can truly flex its musicles</p>
+      <img src="img/munter.png" class="img-fluid mt-5" alt="">
+    </section>
+    <section id="section4" class=" text-center pt-5" style="background-color: rgb(235, 235, 235);">
+      <div class="container">
+        <h4 class="text-uppercase">our awesome clients</h4>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/c01.gif" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/c02.gif" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/c03.gif" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/c04.gif" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/c05.gif" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="img/c03.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section5" style="background-color: rgb(220, 92, 92);">
+      <div class="p-5 text-center container">
+        <h4 class="text-uppercase text-white">we are storytellers, brand are our subject. design is our voive</h4>
+        <p class="text-white container">We belive ideas come from everyone, evrywhere. At BlackTie, everyone within our agency walls is a desihner in their  own right. And there are a faw principles we believe-and we belive evertone should belive-about our design craft. These truths drive us, and ultimately help us redefine the power of design</p>
+      </div>
+    </section>
+  </main>
+  <footer class="" >
+    <div class="bg-dark p-5 text-center fs-3 text-white-50">
+      <i class="bi bi-twitter me-5"></i><i class="bi bi-facebook"></i><i class="bi bi-dribbble ms-5"></i>
+    </div>
+    <div class="bg-black text-center text-light py-4">
+      <p class="text-capitalize m-0">&copy;copyrights <span class="fw-bold">spot</span>. all rights reservsed</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/jsfile.java"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
