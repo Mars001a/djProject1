@@ -1,4 +1,5 @@
 {% extends 'mainapp/layout.html' %}
+{% load static %}
 
 {% block main %}
 <div id="content" class="page-content site-content single-post" role="main">
@@ -42,14 +43,14 @@
                 Я стремлюсь к созданию удобных и современных интерфейсов, которые не только функциональны, но и приятны для пользователя.
                 Прошу вас просмотреть разделы моего портфолио, чтобы увидеть примеры моей работы. Если вы ищете квалифицированного разработчика для вашего проекта, можете связатся сомной на стрнице Контакт. Давайте вместе создадим что-то удивительное!</p>
               <div class="home-buttons">
-                <a href="contact.html" target="_self" class="btn btn-secondary w-50">Контакт</a>
+                <a href="contact" target="_self" class="btn btn-secondary w-50">Контакт</a>
               </div>
             </div>
           </div>
 
           <div class="col-sm-12 col-md-5 col-lg-5">
             <div class="home-photo">
-              <div class="hp-inner" style="background-image: url(./img/stethem.jpeg);">
+              <div class="hp-inner" style="background-image: url({% static 'mainapp/img/stethem.jpeg' %});">
               </div>
             </div>
           </div>
@@ -182,7 +183,7 @@
           <div class="testimonial-content">
 
             <div class="testimonial-picture">
-              <img src="./img/testimonials/toni.jpg" alt="Эрмек Исаев"/>
+              <img src="{% static 'mainapp/img/testimonials/toni.jpg' %}" alt="Эрмек Исаев"/>
             </div>
 
             <div class="testimonial-text">
@@ -210,7 +211,7 @@
           <div class="testimonial-content">
 
             <div class="testimonial-picture">
-              <img src="./img/testimonials/bil.jpg" alt="Билл Гейтс"/>
+              <img src="{% static 'mainapp/img/testimonials/bil.jpg' %}" alt="Билл Гейтс"/>
             </div>
 
             <div class="testimonial-text">
@@ -238,7 +239,7 @@
           <div class="testimonial-content">
 
             <div class="testimonial-picture">
-              <img src="./img/testimonials/jon.jpg" alt="Николь Мартинес"/>
+              <img src="{% static 'mainapp/img/testimonials/jon.jpg' %}" alt="Николь Мартинес"/>
             </div>
 
             <div class="testimonial-text">
@@ -266,7 +267,7 @@
           <div class="testimonial-content">
 
             <div class="testimonial-picture">
-              <img src="./img/testimonials/ilon.png" alt="Илон Маск"/>
+              <img src="{% static 'mainapp/img/testimonials/ilon.png' %}" alt="Илон Маск"/>
             </div>
 
             <div class="testimonial-text">
@@ -302,43 +303,43 @@
       <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
         <div class="client-block">
           <a href="#" target="_blank" title="Amazon">
-            <img src="./img/clients/amazon.png" alt="Amazon">
+            <img src="{% static 'mainapp/img/clients/amazon.png' %}" alt="Amazon">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="Lenta">
-            <img src="./img/clients/lenta.png" alt="Lenta">
+            <img src="{% static 'mainapp/img/clients/lenta.png' %}" alt="Lenta">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="Sber">
-            <img src="./img/clients/sber.png" alt="Sber">
+            <img src="{% static 'mainapp/img/clients/sber.png' %}" alt="Sber">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="Amogus">
-            <img src="./img/clients/amogus.png" alt="Amogus">
+            <img src="{% static 'mainapp/img/clients/amogus.png' %}" alt="Amogus">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="PayPal">
-            <img src="./img/clients/pypal.png" alt="PayPal">
+            <img src="{% static 'mainapp/img/clients/pypal.png' %}" alt="PayPal">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="Sweety">
-            <img src="./img/clients/logo.png" alt="Sweety">
+            <img src="{% static 'mainapp/img/clients/logo.png' %}" alt="Sweety">
           </a>
         </div>
 
         <div class="client-block">
           <a href="#" target="_blank" title="WordPress">
-            <img src="./img/clients/nethunter.png" alt="NetHunter">
+            <img src="{% static 'mainapp/img/clients/nethunter.png' %}" alt="NetHunter">
           </a>
         </div>
       </div>
