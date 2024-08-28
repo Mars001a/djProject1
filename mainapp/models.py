@@ -1,11 +1,11 @@
 from django.db import models
 
 
-class User(models.Model):
+class Testimonial(models.Model):
     name = models.CharField(max_length=50)
-    login = models.CharField(max_length=100)
-    pasword=models.CharField(max_length=100)
-
+    company = models.CharField(max_length=100)
+    text = models.TextField()
+    img = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name

@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import User
+from .models import Testimonial
 
 
 def index(request):
-    data = User.objects.all()
-    return render(request, "mainapp/index.html", {'data': data})
+    testimonial = Testimonial.objects.all()
+    return render(request, "mainapp/index.html", {'testimonial': testimonial})
 
 def resume(request):
     return render(request, "mainapp/resume.html")
