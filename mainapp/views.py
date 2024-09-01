@@ -1,17 +1,20 @@
 from django.shortcuts import render
-from .models import Testimonial
+from . import models
 
 
 def index(request):
-    testimonial = Testimonial.objects.all()
+    testimonial = models.Testimonial.objects.all()
     return render(request, "mainapp/index.html", {'testimonial': testimonial})
+
 
 def resume(request):
     return render(request, "mainapp/resume.html")
 
+
 def portfolio(request):
-    return render(request, "mainapp/portfolio.html")
+    portfolioInfo = models.Portfolio.objects.all()
+    return render(request, "mainapp/portfolio.html", {'portfolio': portfolioInfo})
+
 
 def contact(request):
     return render(request, "mainapp/contact.html")
-

@@ -183,16 +183,16 @@
           <div class="testimonial-content">
 
             <div class="testimonial-picture">
-              <img src="{% static 'mainapp/img/testimonials/toni.jpg' %}" alt="Эрмек Исаев"/>
+              <img src="{% static 'mainapp/img/testimonials/'|add:i.img %}" alt="{{ i.name }}"/>
             </div>
 
             <div class="testimonial-text">
-              <p>Вау, просто взорвал мой мозг! Работать с этим гением - это как скачать порцию креативного взрыва напрямую в свой мозг. Он не просто профессионал, это человек-оркестр, магия которого превращает проекты в настоящие шедевры. Я просто танцую от счастья, видя, как мои идеи становятся реальностью под его руководством. Это не просто сотрудничество, это веселье на взлетной полосе успеха! Рекомендую с закрытыми глазами – этот космический ковбой знает свое дело!</p>
+              <p>{{ i.text }}</p>
             </div>
 
             <div class="testimonial-author-info">
-              <h5 class="testimonial-author">Эрмек Исаев</h5>
-              <p class="testimonial-firm">Яндекс</p>
+              <h5 class="testimonial-author">{{ i.name }}</h5>
+              <p class="testimonial-firm">{{ i.company }}</p>
             </div>
 
             <div class="testimonial-icon">
@@ -206,91 +206,6 @@
         </div>
         {% endfor %}
         <!-- End of Testimonial 1 -->
-
-        <!-- Testimonial 2 -->
-        <div class="testimonial-item">
-          <div class="testimonial-content">
-
-            <div class="testimonial-picture">
-              <img src="{% static 'mainapp/img/testimonials/bil.jpg' %}" alt="Билл Гейтс"/>
-            </div>
-
-            <div class="testimonial-text">
-              <p>Профессиональный и талантливый! Работая с этим специалистом, я убедился в его отличных навыках. Он прекрасно справляется с задачами, внимателен к деталям. Сотрудничество с ним - это настоящее удовольствие, и я уверен, что буду обращаться за помощью в будущем!</p>
-            </div>
-
-            <div class="testimonial-author-info">
-              <h5 class="testimonial-author">Билл Гейтс</h5>
-              <p class="testimonial-firm">Microsoft</p>
-            </div>
-
-            <div class="testimonial-icon">
-              <i class="fa fa-quote-left"></i>
-            </div>
-             <div class="testimonial-icon-big">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-
-        </div>
-        <!-- End of Testimonial 2 -->
-
-        <!-- End of Testimonial 3 -->
-        <div class="testimonial-item">
-          <div class="testimonial-content">
-
-            <div class="testimonial-picture">
-              <img src="{% static 'mainapp/img/testimonials/jon.jpg' %}" alt="Николь Мартинес"/>
-            </div>
-
-            <div class="testimonial-text">
-              <p>Работая с этим магистром искусства и технологий, я был потрясен не только его мастерством, но и внушительным арсеналом навыков. Он как супергерой, владеющий магией дизайна, программирования и творчества. Если бы супергерои создавали веб-проекты, он был бы их лидером! Поистине эпическое сотрудничество, в котором каждый проект - это отдельная глава в истории креативного подвига. Так держать!</p>
-            </div>
-
-            <div class="testimonial-author-info">
-              <h5 class="testimonial-author">Николь Мартинес</h5>
-              <p class="testimonial-firm">Google</p>
-            </div>
-
-            <div class="testimonial-icon">
-              <i class="fa fa-quote-left"></i>
-            </div>
-            <div class="testimonial-icon-big">
-              <i class="fa fa-quote-right"></i>
-            </div>
-
-          </div>
-        </div>
-        <!-- End of Testimonial 3 -->
-
-        <!-- Testimonial 4 -->
-        <div class="testimonial-item">
-          <div class="testimonial-content">
-
-            <div class="testimonial-picture">
-              <img src="{% static 'mainapp/img/testimonials/ilon.png' %}" alt="Илон Маск"/>
-            </div>
-
-            <div class="testimonial-text">
-              <p>Где я учился, он там преподавал.</p>
-            </div>
-
-            <div class="testimonial-author-info">
-              <h5 class="testimonial-author">Илон Маск</h5>
-              <p class="testimonial-firm">Tesla</p>
-            </div>
-
-            <div class="testimonial-icon">
-              <i class="fa fa-quote-left"></i>
-            </div>
-             <div class="testimonial-icon-big">
-              <i class="fa fa-quote-right"></i>
-            </div>
-
-          </div>
-        </div>
-        <!-- End of Testimonial 4 -->
-
       </div>
       <!-- /Testimonials -->
 
@@ -365,7 +280,7 @@
       <div class="lm-info-block gray-default">
         <i class="linecons linecons-heart"></i>
         <h4>Довольные клиенты</h4>
-        <span class="lm-info-block-value">964</span>
+        <span class="lm-info-block-value">1,964</span>
         <span class="lm-info-block-text"></span>
       </div>
     </div>
@@ -373,8 +288,8 @@
     <div class="col-xs-12 col-sm-3">
       <div class="lm-info-block gray-default">
         <i class="linecons linecons-clock"></i>
-        <h4>Часы работы</h4>
-        <span class="lm-info-block-value">4 ,780</span>
+        <h4>Годы работы</h4>
+        <span class="lm-info-block-value">10</span>
         <span class="lm-info-block-text"></span>
       </div>
     </div>
@@ -392,7 +307,7 @@
       <div class="lm-info-block gray-default">
         <i class="linecons linecons-cup"></i>
         <h4>Сделаныйх сайтов</h4>
-        <span class="lm-info-block-value">1,286</span>
+        <span class="lm-info-block-value">2,286</span>
         <span class="lm-info-block-text"></span>
       </div>
     </div>
