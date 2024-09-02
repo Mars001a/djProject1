@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}">
+</head>
+<body>
+
+    <form method="post" class="form">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="USERNAME" value="{{ username }}">
+        <input type="password" name="password" placeholder="PASSWORD">
+        <button type="submit">LOGIN</button>
+        {% if error %}
+        <div class="input-error">
+            {{ error }}
+        </div>
+         {% endif %}
+        <div></div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../icons/BG.svg");
+    background-size: cover;
+    background-color: #2148C0;
+    height: 100vh;
+    display: flex;
+}
+
+.form{
+    
+    width: 350px;
+    background-color: transparent;
+    margin: auto;
+}
+
+.form input{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+    background-position-y: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    padding-left: 60px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.form input[name="username"]{
+    color: #FFFFFF;
+    background-image: url("../icons/user.svg");
+}
+.form input[name="password"]{
+    color: #FFFFFF;
+    background-image: url("../icons/lock.svg");
+}
+
+input::placeholder{
+    color: #a9b6ff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form button{
+    background-color: #FFFFFF;
+    color: #2148C0;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-bottom: 20px;
+}
+
+.form button:active{
+    background-color: #cfcfcf;
+}
+
+
+
+.input-error{
+    color: red; 
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
