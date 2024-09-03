@@ -35,6 +35,9 @@ def logout_view(request):
 
 
 def login_view(request):
+    if request.user.is_authenticated:
+        return redirect("/")
+
     error = ""
     username = ""
     if request.method == 'POST':
@@ -55,6 +58,9 @@ def login_view(request):
 
 
 def registration_view(request):
+    if request.user.is_authenticated:
+        return redirect("/")
+
     error = ""
     if request.method == 'POST':
         username = request.POST.get("username")
