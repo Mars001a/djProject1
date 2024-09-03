@@ -16,6 +16,7 @@ body {
     width: 350px;
     background-color: transparent;
     margin: auto;
+    text-align: center;
 }
 
 .form input{
@@ -38,6 +39,11 @@ body {
     background-image: url("../icons/user.svg");
 }
 .form input[name="password"]{
+    color: #FFFFFF;
+    background-image: url("../icons/lock.svg");
+}
+
+.form input[name="password2"]{
     color: #FFFFFF;
     background-image: url("../icons/lock.svg");
 }
@@ -72,4 +78,11 @@ input::placeholder{
     font-size: 18px;
     text-align: center;
     font-weight: 600;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration-line: none;
+    color: #FFFFFF;
+
 }

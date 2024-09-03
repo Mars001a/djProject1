@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout, authenticate, login
+from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.shortcuts import redirect
 
@@ -39,8 +40,6 @@ def login_view(request):
     if request.method == 'POST':
         username = request.POST.get("username")
         password = request.POST.get("password")
-        print(username)
-        print(password)
         user = authenticate(request, username=username, password=password)
         if not username:
             error = "Введите username"
@@ -53,3 +52,26 @@ def login_view(request):
             error = "Неправильный username или password"
 
     return render(request, "mainapp/login.html", {'error': error, "username": username})
+
+
+def registration_view(request):
+    error = ""
+    if request.method == 'POST':
+        username = request.POST.get("username")
+        password = request.POST.get("password")
+        password2 = request.POST.get("password2")
+
+        if User.objects.filter(username=username).exists():
+            error = "Пользователь с таким именем уже существует"
+        elif not username:
+            error = "Введите username"
+        elif not password:
+            error = "Введите password"
+        elif password != password2:
+            error = "Пароли должны быть похожи"
+        else:
+            user = User.objects.create_user(username=username, password=password)
+            user.save()
+            return redirect('/')
+
+    return render(request, "mainapp/register.html", {'error': error})
